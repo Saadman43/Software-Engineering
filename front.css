@@ -14,7 +14,6 @@ body{
         display: inline-block;
     }
     
-    /* Updated CSS for the dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -24,7 +23,6 @@ body{
     margin-top: -27px;
     margin-left:-10px ; 
     border-radius: 5px;
-    /* Adjust the margin as needed */
 }
 
 .dropdown-content a {
@@ -311,7 +309,7 @@ ul{
     padding-right:5px;
 }
   
-  #right-panel, #right-panel-registration {
+  #right-panel, #right-panel-registration,#right-panel-search {
     position: fixed;
     top: 0;
     right: 0;
@@ -336,7 +334,7 @@ ul{
     -webkit-transform: translate3d(104%,0,0);
   }
 
-  #right-panel.active, #right-panel-registration.active{
+  #right-panel.active, #right-panel-registration.active,#right-panel-search.active{
     visibility: visible;
     opacity: 1;
     transform: none;
@@ -353,7 +351,7 @@ label {
     margin-bottom: 5px;
 }
 
-.login-container input 
+.login-container input,.login-container select 
  {
     width: 100%;
     padding: 8px;

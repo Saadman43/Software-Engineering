@@ -62,7 +62,7 @@
 
               </nav>
               <div class="icons">
-                <a href="#"><i class="fa fa-search"></i></a>
+                <a id="toggle-button-search" href="#"><i class="fa fa-search"></i></a>
                 <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 <a id="toggle-button" href="#"><i class="fa fa-user"></i></a>
               </div>
@@ -454,6 +454,39 @@
            </form>
        </div>
     </div>
+    <div id="right-panel-search">
+        <div class="login-container">
+               <div class="d-flex">
+                   <h2 class="login-title">Search our site</h2>
+                   <h2 id="close-button-search" class="cursorPointer">x</h2>  
+               </div>
+               
+               <form>
+                <div class="form-group">
+                    <select name="categorySelect">
+                        <option value="">All Categories</option>
+                        <option value="1">Men's Ethnic wear</option>
+                        <option value="2">Men's shirt</option>
+                        <option value="3">Men's pant</option>
+                        <option value="4">Men's T-shirt</option>
+                        <option value="5">panjabi</option>
+                        <option value="6">Women's Ethnic wear</option>
+                        <option value="7">Women's pant</option>
+                        <option value="8">Women's kaftan</option>
+                        <option value="9">Women's westen</option>
+                        <option value="10">sweater</option>
+                        <option value="11">Jacket</option>
+                        <option value="12">Hoodies</option>
+                      </select>
+                </div>
+                <div class="form-group">
+       
+                    <input type="text" placeholder="Search" id="Search" name="Search" required>
+                </div>
+            
+            </form>
+           </div>
+        </div>
      <script>
      const rightPanel = document.getElementById('right-panel');
    const toggleButton = document.getElementById('toggle-button');
@@ -477,6 +510,17 @@ toggleButtonRegistration.addEventListener('click', () => {
 closeButtonRegistration.addEventListener('click', () => {
   rightPanelRegistration.classList.toggle('active');
 });
+const rightPanelSearch = document.getElementById('right-panel-search');
+   const toggleButtonSearch = document.getElementById('toggle-button-search');
+   const closeButtonSearch = document.getElementById('close-button-search');
+   
+   toggleButtonSearch.addEventListener('click', () => {
+     rightPanelSearch.classList.toggle('active');
+   });
+   
+   closeButtonSearch.addEventListener('click', () => {
+     rightPanelSearch.classList.toggle('active');
+   });
 </script>
 </body>
 </html>
