@@ -1,24 +1,54 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, LargeBinary
-from sqlalchemy.orm import relationship
-
+from sqlalchemy import Column, Integer, Float, String, LargeBinary
 from database import Base
 
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "user_registration"
 
     id = Column(Integer, primary_key=True, index=True)
-    first_name = Column(String(255))
-    last_name = Column(String(255))
+    name = Column(String(255))
+    user_name = Column(String(255), unique=True)
     email = Column(String(320), unique=True)
-    active = Column(Boolean, default=False)
-    salt = Column(LargeBinary())
-    special_key = Column(LargeBinary())
+    mobile_number = Column(String(15), unique=True)
+    is_active = Column(String(5))
+    user_id = Column(String(20))
+    salt = Column(String(255))
 
 
-class Password(Base):
-    __tablename__ = "passwords"
+class Login(Base):
+    __tablename__ = "login"
+   
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(LargeBinary)
+    password = Column(LargeBinary)
+    role = Column(String(255))
+
+
+class OTP(Base):
+    __tablename__ = "user_otp"
 
     id = Column(Integer, primary_key=True, index=True)
-    password = Column(String(320))
-    hashed_special_key = Column(LargeBinary())
+    email = Column(String(320), unique=True)
+    otp = Column(String(10))
+
+
+class Product(Base):
+    __tablename__ = 'products'
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    image = Column(LargeBinary, nullable=False)  # Store image as binary data
+    price = Column(Float, nullable=False)
+    description = Column(String, nullable=False)
+    category = Column(String, nullable=False)
+
+
+class Order(Base):
+    __tablename__ = "Order"
+
+    order_id = Column(Integer, primary_key=True, index=True)
+    user_name = Column(String(255), nullable=False)
+    product_id = Column(Integer, nullable=False)
+    quantity = Column(Integer, nullable=False)
+    price = Column(Integer, nullable=False)
+    address = Column(String(255), nullable=False)
