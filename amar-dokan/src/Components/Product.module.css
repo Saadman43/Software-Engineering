@@ -1,0 +1,92 @@
+/* Import Font Awesome icons if needed (assuming you included them)
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: 300ms linear;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 30px auto 80px;
+  position: relative;
+  color: #555;
+}
+
+.title div {
+  display: inline-block;
+  border-bottom: 5px solid #ff523b;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.add-to-cart-btn {
+  display: block;
+  background-color: #ff523b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #333;
+}
+
+.productImage {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.col-4:hover {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

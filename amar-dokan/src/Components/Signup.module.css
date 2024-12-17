@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-form {
+    width: 27rem;
+    box-shadow: 10px 10px 21px -6px rgba(184, 184, 184, 1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.log {
+    margin-bottom: 8px;
+}
+
+.text-field {
+    margin-bottom: 1rem;
+}
+
+.text-field label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.text-field input {
+    width: 100%;
+    padding: 8px;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
