@@ -1,0 +1,86 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .text-field {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .text-field {
+        margin-bottom: 1rem;
+    }
+    
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+     */
+
+
+  
+
+     /* Otp.css */
+
+.container {
+  /* Add any container styles here */
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+  width: 27rem;
+  box-shadow: 10px 10px 21px -6px rgba(184, 184, 184, 1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.log {
+  margin-bottom: 8px;
+}
+
+.text-field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#otp {
+  width: 100%;
+  padding: 8px;
+}
+
+
+
+/* Add any additional styles as needed */
